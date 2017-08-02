@@ -100,7 +100,6 @@ RUN JENKINS_UC_DOWNLOAD=http://archives.jenkins-ci.org /usr/local/bin/install-pl
         simple-theme-plugin \
         slack \
         test-stability \
-        timestamper \
         workflow-cps \
         workflow-remote-loader \
         workflow-scm-step
