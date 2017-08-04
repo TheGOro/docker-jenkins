@@ -74,7 +74,7 @@ COPY plugins.sh /usr/local/bin/plugins.sh
 COPY install-plugins.sh /usr/local/bin/install-plugins.sh
 COPY theme /usr/share/jenkins/ref/userContent/theme
 
-RUN JENKINS_UC_DOWNLOAD=http://archives.jenkins-ci.org /usr/local/bin/install-plugins.sh \
+RUN JENKINS_UC_DOWNLOAD=http://mirrors.seville-jam.es/jenkins /usr/local/bin/install-plugins.sh \
         ansicolor \
         artifactory \
         build-blocker-plugin \
