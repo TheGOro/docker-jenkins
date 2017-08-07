@@ -14,6 +14,9 @@ import jenkins.model.*
 Jenkins.instance.setNumExecutors(${JENKINS_NUM_EXECUTORS:-2})
 EOF
 
+# Disable the SSL certificate verification for Git in order to use repositories served over HTTPS with self-signed SSL certificates
+git config --global http.sslVerify false
+
 # if `docker run` first argument start with `--` the user is passing jenkins launcher arguments
 if [[ $# -lt 1 ]] || [[ "$1" == "--"* ]]; then
 
